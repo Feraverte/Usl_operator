@@ -1,0 +1,33 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	int N, M, X, Y, K;
+	cin >> N >> M >> X >> Y;
+
+    if (N > M) 
+    {
+        K = N;
+        N = M;
+        M = K;
+    }
+    if ((N - X < X) && (N - X < M - Y) && (N - X < Y)) 
+    {
+        cout << N - X;
+    }
+    else if ((X < N - X) && (X < M - Y) && (X < Y))
+    {
+        cout << X;
+    }
+    else if ((M - Y < X) && (M - Y < Y) && (M - Y < N - X))
+    {
+        cout << M - Y;
+    }
+    else 
+    {
+        cout << Y;
+    }
+    return 0;
+}
