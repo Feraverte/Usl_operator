@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	int st1, st2, sto1, sto2;
+	cin >> sto1 >> st1 >> sto2 >> st2;
+
+	if (((st1 == st2) and (sto1 != sto2)) or ((st1 != st2) and (sto1 == sto2)))
+	{
+		cout << "YES";
+	}
+	else
+	{
+		cout << "NO";
+	}
+	return 0;
+}
